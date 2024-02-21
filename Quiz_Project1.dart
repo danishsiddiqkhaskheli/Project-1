@@ -111,8 +111,12 @@ void main() {
   print('email: $correctEmail');
   print('Your Marks is $Marks out of ${totalQuestions * 10}.');
   print('Percentage: $percentage%');
-  if (percentage >= 80) {
-    print('*Pass*');
+  if (percentage == 80) {
+    print('*Pass with Grade B*');
+  } else if (percentage == 90) {
+    print('*Pass with Grade : A*');
+  } else if (percentage == 100) {
+    print('*Pass with Grade : A+*');
   } else {
     print('Fail');
   }
